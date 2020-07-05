@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Notes application that helps to organize your life"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/edit.css" />
+    <title>Notes</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <div class="logo">
+          <img id="logo" src="./img/Logo.svg" alt="logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li>
+            <a class="active" href="edit.html">Note</a>
+          </li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <form action="">
+          <input id="note-title" class="title-input" placeholder="Note title" />
+          <textarea
+            id="note-body"
+            class="body-input"
+            placeholder="Enter note text"
+          ></textarea>
+          <div class="time">
+            <span id="time"></span>
+          </div>
+          <div class="buttons">
+            <button id="removeNote">
+              Remove Note
+            </button>
+            <button id="saveNote">Save Note</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="scripts/edit-bundle.js"></script>
+  </body>
+</html>

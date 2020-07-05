@@ -1,0 +1,266 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background-color: black;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* NAV section */
+.main-head {
+  background-color: #595959;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  padding: 2rem 0rem;
+}
+
+.logo {
+  flex: 2 1 40rem;
+}
+
+#logo {
+  height: 5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+}
+
+.nav-links a {
+  font-size: 2rem;
+}
+
+.main-content {
+  height: 90vh;
+  display: flex;
+  margin: 0 0 0 auto;
+  overflow: hidden;
+}
+
+/* Nav Menu */
+
+.menu {
+  flex: 1 1;
+  height: 90vh;
+  background-color: #595959;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 2 1 50rem;
+  overflow-y: auto;
+  margin-top: 3rem;
+}
+
+.actions {
+  margin: inherit;
+  flex: 2 1 5rem;
+}
+
+.actions__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions__container input {
+  padding: 0.5rem 1rem;
+  margin: 2rem 0rem;
+}
+
+.actions__container select {
+  padding: 0.5rem 1rem;
+  margin: 2rem 0rem;
+}
+
+.input {
+  border: 1px solid #dedfe0;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  height: 3rem;
+  margin-right: 0.8rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.dropdown {
+  border-radius: 0;
+  border: 1px solid #dedfe0;
+  background: white;
+  font-size: 1.4rem;
+  font-weight: 300;
+  height: 3rem;
+  margin-right: 0.8rem;
+}
+
+#create_note {
+  margin: 4rem 0rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#create_note img {
+  height: 5rem;
+  flex: 1 1 0.2rem;
+}
+
+#create_note p {
+  flex: 2 1;
+  color: #afafaf;
+  font-size: 1.5rem;
+}
+
+#create_note p:hover {
+  color: white;
+}
+
+.content {
+  flex: 2 1 5rem;
+  overflow: hidden;
+  position: inherit;
+  margin: inherit;
+}
+
+#contents {
+  list-style: decimal;
+  margin-top: 2rem;
+}
+
+#contents li::marker {
+  color: #afafaf;
+  font-size: 1.5rem;
+}
+
+#contents li {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+#contents li a {
+  color: #1b1b1b;
+}
+#contents li a:hover {
+  color: white;
+}
+
+#contents {
+  overflow-y: scroll;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content h4 {
+  font-size: 2.5rem;
+  color: white;
+  padding: 0rem 2rem;
+}
+
+.empty-content {
+  font-size: 2rem;
+  color: #1b1b1b;
+}
+
+/* Notes content */
+
+#notes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+/* Note List Item */
+
+.list-item {
+  text-decoration: none;
+  color: #333333;
+  background: #f7f7f7;
+  border: 1px solid #dedfe0;
+  border-radius: 2rem;
+  margin: 5rem;
+  padding: 1.6rem;
+  display: block;
+  transition: background 0.3s ease;
+  height: 20rem;
+  width: 35rem;
+}
+
+.list-item:hover {
+  background: #eeeeee;
+}
+
+.list-item__title {
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+}
+
+.list-item__body_container {
+  height: 6rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list-item__body {
+  font-size: 2rem;
+  margin: 3rem 0rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list-item__subtitle {
+  color: #666;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.empty-message {
+  text-align: center;
+  margin: 3.2rem 0;
+  font-size: 5rem;
+  color: #595959;
+}

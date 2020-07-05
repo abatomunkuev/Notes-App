@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Notes application that helps to organize your life"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Notes</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <div class="logo">
+          <img id="logo" src="./img/Logo.svg" alt="logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li>
+            <a class="active" href="main.html">Notes</a>
+          </li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main-content">
+        <nav class="menu">
+          <div class="actions">
+            <div class="actions__container">
+              <input
+                id="search-text"
+                class="input"
+                type="text"
+                placeholder="Search notes..."
+              />
+              <select id="filter-by" class="dropdown">
+                <option value="byEdited">Sort by last edited</option>
+                <option value="byCreated">Sort by recently created</option>
+                <option value="alphabetical">Sort alphabetically</option>
+              </select>
+              <div id="create_note">
+                <img src="./img/create-note.svg" alt="" />
+                <p>new note</p>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <h4>Notes:</h4>
+            <ul id="contents"></ul>
+          </div>
+        </nav>
+        <div class="container">
+          <div id="notes"></div>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/index-bundle.js"></script>
+  </body>
+</html>

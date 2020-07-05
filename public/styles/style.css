@@ -1,0 +1,223 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background-color: black;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: #379cfa;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: background-color 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #1a4975;
+}
+
+/* NAV section */
+.main-head {
+  background-color: #595959;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+}
+
+.logo {
+  flex: 2 1 40rem;
+}
+
+#logo {
+  height: 5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+}
+
+.nav-links a {
+  font-size: 2rem;
+}
+
+/* Intro section */
+
+.hero {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-image {
+  flex: 1 1 40rem;
+  padding: 10rem 10rem;
+}
+
+.intro-image img {
+  height: 30rem;
+}
+
+.intro-text {
+  flex: 2 1 40rem;
+  padding: 10rem 0rem;
+}
+
+.intro-text h2 {
+  font-size: 3.5rem;
+  color: #333333;
+}
+
+.intro-text p {
+  padding: 3rem 0rem;
+  font-size: 2rem;
+  color: #525252;
+}
+
+.intro-text button {
+  padding: 2rem 6rem;
+  font-size: 2.5rem;
+}
+
+/* Benefits section */
+
+.benefits {
+  min-height: 80vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.benefits-image {
+  flex: 1 1 40rem;
+}
+
+.benefits-image img {
+  height: 30rem;
+}
+
+.benefits-text {
+  flex: 2 1 40rem;
+}
+
+.benefits-text h2 {
+  font-size: 4rem;
+  padding-bottom: 4rem;
+  color: #333333;
+}
+
+.benefits-text button {
+  padding: 2rem 6rem;
+  font-size: 2rem;
+}
+
+/* Footer */
+
+footer {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  background-color: #595959;
+}
+
+footer h4 {
+  padding-top: 2rem;
+  flex: 1 1 5rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.logos {
+  flex: 1 1;
+  width: 90%;
+  margin: auto;
+}
+
+.logos ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logos img {
+  height: 4rem;
+}
+
+/* About Page */
+
+.main-content {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about p {
+  font-size: 2rem;
+  margin: 5rem;
+}
+
+.tutorial {
+  display: flex;
+  margin: 5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #23588a;
+  border-radius: 1rem;
+}
+
+.tutorial h3 {
+  font-size: 4rem;
+  color: white;
+  margin: 3rem;
+}
+
+.instructions {
+  width: 60%;
+  margin: 4rem;
+}
